@@ -8,4 +8,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mobile.aviato.MainActivity" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:text="TextView"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="116dp"
+        android:text="Imagen" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="55dp"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Nombre" />
+
 </RelativeLayout>

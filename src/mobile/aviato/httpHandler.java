@@ -24,11 +24,11 @@ public class httpHandler {
           /*Creamos el objeto de HttpClient que nos permitira conectarnos mediante peticiones http*/
 		  HttpPost httppost = new HttpPost(posturl);
           /*El objeto HttpPost permite que enviemos una peticion de tipo POST a una URL especificada*/
-		  //AÑADIR PARAMETROS
+		  //Aï¿½ADIR PARAMETROS
 		  List<NameValuePair> params = new ArrayList<NameValuePair>();
 		  params.add(new BasicNameValuePair("request",request));
 		  //params.add(new BasicNameValuePair("info","Otro mensaje"));
-		  /*Una vez añadidos los parametros actualizamos la entidad de httppost, esto quiere decir en pocas palabras anexamos los parametros al objeto para que al enviarse al servidor envien los datos que hemos añadido*/
+		  /*Una vez aï¿½adidos los parametros actualizamos la entidad de httppost, esto quiere decir en pocas palabras anexamos los parametros al objeto para que al enviarse al servidor envien los datos que hemos aï¿½adido*/
           httppost.setEntity(new UrlEncodedFormEntity(params));
 
           /*Finalmente ejecutamos enviando la info al server*/
@@ -40,7 +40,12 @@ public class httpHandler {
 		  return text;
 
 	  }
-	  catch(Exception e) { return "error";}
+	  catch(Exception e) { 
+		  System.out.println("jhonatanchavezcastillo: ");
+		  System.out.println(e.getMessage()); 
+		  return "caca"; 
+	  
+	  }
 
 	}
   
